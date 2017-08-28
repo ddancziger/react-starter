@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dashboard --minimal -- npm run dev",
-    "dev": "cross-env BABEL_ENV=webpack webpack-dev-server",
-    "prod": "cross-env BABEL_ENV=webpack NODE_ENV=produciton webpack --progress --display verbose --verbose",
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p",
     "lint:watch": "nodemon --watch . --ext js,yml --exec 'npm run lint:fix'",
     "lint:fix": "eslint ./src --fix"
   },

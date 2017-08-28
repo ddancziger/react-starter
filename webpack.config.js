@@ -7,8 +7,6 @@ const DashboardPlugin = require('webpack-dashboard/plugin');
 // const childProcess = require('child_process')
 
 
-process.env.BABEL_ENV = process.env.NODE_ENV;
-
 const isProduction = process.env.NODE_ENV === 'production';
 
 const paths = {
@@ -92,6 +90,7 @@ function common() {
 }
 
 function production() {
+  console.log(process.env.NODE_ENV);
   return {
     bail: true,
     entry: {
@@ -116,12 +115,7 @@ function production() {
         minChunks: Infinity,
       }),
       new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false,
-          screw_ie8: true,
-          drop_console: true,
-          drop_debugger: true,
-        },
+        compress: true,
       }),
     ],
   };
@@ -148,7 +142,4 @@ function development() {
   };
 }
 
-module.exports =
-  process.env.NODE_ENV === 'production'
-    ? merge(common(), production())
-    : merge(common(), development());
+module.exports = isProduction ? merge(common(), production()) : merge(common(), development());
