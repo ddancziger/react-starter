@@ -24,7 +24,7 @@ function getEnvVars(...extraVars) {
   //   .toString()
   // 'process.env.COMMIT_HASH': JSON.stringify(commitHash),
   // Create env variables
-  const envVars = ['NODE_ENV', 'npm_package_name', 'npm_package_version', 'npm_lifecycle_event', ...extraVars];
+  const envVars = ['NODE_ENV', 'npm_package_name', 'npm_package_version', 'npm_lifecycle_event', ...extraVars]; // eslint-disable-line
   // generate object with the env vars
   // envVars.reduce(
   //   (e, v) => {
@@ -90,7 +90,6 @@ function common() {
 }
 
 function production() {
-  console.log(process.env.NODE_ENV);
   return {
     bail: true,
     entry: {

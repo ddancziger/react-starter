@@ -16,6 +16,9 @@
     "transform-class-properties"
   ],
   "env": {
+    "testing": {
+      "presets": ["es2015", "stage-1", "react", "flow"]
+    },
     "development": {
       "presets": [
       ],
