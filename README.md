@@ -26,3 +26,24 @@
       "prettier.eslintIntegration": true
     }
 ```
+  ### Debugger for chrome
+    * create a file inside folder .vscode/launch.json and paste
+    {
+     "version": "0.2.0",
+     "configurations": [
+        {
+          "type": "chrome",
+          "request": "launch",
+          "name": "Launch Chrome against localhost",
+          "url": "http://localhost:9000",
+          "webRoot": "${workspaceRoot}"
+        },
+        {
+          "type": "chrome",
+          "request": "attach",
+          "name": "Attach to Chrome",
+          "port": 9222,
+          "webRoot": "${workspaceRoot}"
+        }
+      ]
+    }
