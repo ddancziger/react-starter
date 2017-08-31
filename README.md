@@ -13,6 +13,8 @@
     * ESLint
     * Flow language support
     * Debugger for chrome
+    * Prettier Javascript Formatter
+    * Path Intellisense
     
   #### Settings for the user (using flow, prettier-eslint)
   ```javascript
