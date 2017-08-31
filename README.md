@@ -15,6 +15,7 @@
     * Debugger for chrome
     * Prettier Javascript Formatter
     * Path Intellisense
+    * npm Intellisense
     
   #### Settings for the user (using flow, prettier-eslint)
   ```javascript
