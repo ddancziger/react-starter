@@ -50,3 +50,11 @@
         }
       ]
     }
+    
+    ### Best practices notes
+    
+    * User pure components (try no to use functional components)
+    * User ShouldComponentUpdate()
+    * /?react_perf (profiling on chrome)
+    * Perf library 
+    * why-did-you-update (https://github.com/garbles/why-did-you-update)
