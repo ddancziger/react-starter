@@ -51,7 +51,7 @@
       ]
     }
     
-    ### Best practices notes
+  ### Best practices notes
     
     * User pure components (try no to use functional components)
     * User ShouldComponentUpdate()
