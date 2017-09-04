@@ -26,7 +26,8 @@
       "flow.useNPMPackagedFlow": true,
       "editor.formatOnSave": true,
       "javascript.format.enable": false,
-      "prettier.eslintIntegration": true
+      "prettier.eslintIntegration": true,
+      "editor.tabSize": 4
     }
 ```
   ### Debugger for chrome
