@@ -29,7 +29,7 @@
       { "classes": "always", "switches": "always", "blocks": "never" }
     ],
     "object-curly-spacing": ["error", "always"],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
     "react/jsx-tag-spacing": [
       "error",
       {
